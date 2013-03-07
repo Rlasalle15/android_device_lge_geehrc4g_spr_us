@@ -34,5 +34,8 @@ PRODUCT_MODEL := LG-LS970
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# Boot Animation
+BOOTANIMATION_RESOLUTION := 720x1280
+
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/lge/geehrc4g_spr_us/device.mk)
