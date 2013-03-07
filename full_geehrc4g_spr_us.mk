@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+# Torch
+#PRODUCT_PACKAGES := \
+#    Torch
+
 # Sample: This is where we'd set a backup provider if we had one
 # $(call inherit-product, device/sample/products/backup_overlay.mk)
 
