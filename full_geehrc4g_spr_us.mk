@@ -37,5 +37,8 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 # Boot Animation
 BOOTANIMATION_RESOLUTION := 720x1280
 
+# Inherit EOS common stuff.
+$(call inherit-product, vendor/eos/common.mk)
+
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/lge/geehrc4g_spr_us/device.mk)
