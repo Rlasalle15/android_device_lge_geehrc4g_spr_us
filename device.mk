@@ -76,4 +76,3 @@ PRODUCT_COPY_FILES += \
 
 # CameraHAL
 PRODUCT_PACKAGES += camera.geehrc
-
