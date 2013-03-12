@@ -42,7 +42,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # QC RIL path for rild
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-        rild.libpath=/system/lib/libril-qc-qmi-1.so \
         rild.libargs=-d /dev/smd0
 
 # Telephony Properties
@@ -53,6 +52,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
         telephony.lte.cdma.device=1 \
         ro.telephony.default_network=8 \
         ro.ril.def.preferred.network=8 \
+        ro.telephony.ril_class=LGEQualcommCDMARIL \
         ril.subscription.types=NV,RUIM \
         ro.cdma.subscribe_on_ruim_ready=true \
         persist.radio.no_wait_for_card=1 \
@@ -75,4 +75,4 @@ PRODUCT_COPY_FILES += \
    frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
 
 # CameraHAL
-PRODUCT_PACKAGES += camera.geehrc
+#PRODUCT_PACKAGES += camera.geehrc
