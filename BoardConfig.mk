@@ -25,6 +25,9 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
 TARGET_KERNEL_CONFIG := geehrc_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/gee_mako
 
+#Add Custom RIL class automatically
+BOARD_RIL_CLASS := "../../../device/lge/geehrc4g_spr_us/LGEQualcommCDMARIL"
+
 # inherit from gee-common
 -include device/lge/gee-common/BoardConfigCommon.mk
 
