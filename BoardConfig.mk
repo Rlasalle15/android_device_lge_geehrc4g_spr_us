@@ -21,7 +21,6 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
 
 TARGET_KERNEL_CONFIG := j1sp-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/gee
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.7
 
 # inherit from gee-common
 -include device/lge/gee-common/BoardConfigCommon.mk
