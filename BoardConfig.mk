@@ -14,13 +14,16 @@
 # limitations under the License.
 #
 
-BOARD_KERNEL_CMDLINE := console=ttySHL0,115200,n8 androidboot.hardware=geehrc lpj=67677
+BOARD_KERNEL_CMDLINE := console=ttySHL0,115200,n8 androidboot.hardware=geehrc4g_spr_us lpj=67677
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
 
-TARGET_KERNEL_CONFIG := j1sp-perf_defconfig
-TARGET_KERNEL_SOURCE := kernel/lge/gee
+#TARGET_KERNEL_CONFIG := j1sp-perf_defconfig
+#TARGET_KERNEL_SOURCE := kernel/lge/gee
+
+TARGET_KERNEL_CONFIG := geehrc_defconfig
+TARGET_KERNEL_SOURCE := kernel/lge/geem
 
 # inherit from gee-common
 -include device/lge/gee-common/BoardConfigCommon.mk
@@ -32,4 +35,4 @@ TARGET_OTA_ASSERT_DEVICE := geebus,geebusc,geehrc,geehrc4g,gee_sp,geehrc_sp,ls97
 TARGET_BOARD_INFO_FILE := device/lge/geehrc4g_spr_us/board-info.txt
 
 # inherit from the proprietary version
--include vendor/lge/geehrc_sp/BoardConfigVendor.mk
+-include vendor/lge/gee/BoardConfigVendor.mk
