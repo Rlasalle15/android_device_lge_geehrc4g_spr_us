@@ -76,4 +76,4 @@ PRODUCT_COPY_FILES += \
 
 # CameraHAL
 PRODUCT_PACKAGES += \
-   camera.geehrc4g_spr_us                
+   camera.geehrc4g_spr_us
