@@ -19,10 +19,7 @@ BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
 
-#TARGET_KERNEL_CONFIG := geehrc_defconfig
-#TARGET_KERNEL_SOURCE := kernel/lge/geem
-
-TARGET_KERNEL_CONFIG := geehrc_defconfig
+TARGET_KERNEL_CONFIG := geehrc-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/gee_mako
 
 #Add Custom RIL class automatically
